@@ -1,947 +1,675 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-*{
-    margin: 0;
+
+* {
     padding: 0;
-    box-sizing: border-box;
-}
-header{
-    height: 100vh;
-    background-color: #636C79;
-}
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 6%;
-    padding-left: 40%;
-    padding: 20px;
-}
-.navbar li{
-    list-style-type: none;
-    color: #ffffff;
-    font-family: poppins;
-    padding: 2px 4pxpx;
-    cursor: pointer;
-}
-.navbar .navitem-active{
-    border: 1px solid #ffffff;
-    padding: 10px;
-    margin-left: 20px;
-}
-.navbar .nav-logo{
-    display: flex;
-    position: relative;
-    margin-right: 25%;
-}
-.navbar .nav-logo .logo{
-    padding-left: 30px;
+    margin: 0;
 }
 
-.hero-section {
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-    align-items: center;
-    height: 80vh;
-    padding-bottom: 90px;
-    margin-top: -40%;
+body {
+    font-family: "Arial", sans-serif;
+    overflow-x: hidden;
 }
-.hero-section .left-sec .img-left {
-    width: 20rem;
-    height: 400px;
-    margin-top: 28%;
-    padding-right: 30px;
-    overflow: hidden;
-}
-.hero-section .left-sec .img-left img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-}
-.hero-section .right-sec h1{
-    margin-top: 60px;
-    font-family: poppins;
-    font-size: 2.5rem;
-    line-height: 50px;
-    color: #ffffff;
-}
-.hero-section .right-sec p{
-    font-family: poppins;
-    font-size: .8rem;
-    margin-top: 35px;
-    margin-bottom: 20px;
-    color: #ffffff9f;
-}
-.hero-section .right-sec .contact{
-    position: relative;
-}
-.hero-section .right-sec .contact input[type="email"]{
-        padding: 15px 40px;
-        width: 22rem;
-        border: none;
-}
-.hero-section .right-sec .contact input[type="email"]::placeholder{
-    font-size: 17px;
-}
-.hero-section .right-sec .contact button{
-    position: absolute;
-    margin-left: -115px;
-    margin-top: 5px;
-    width: 30%;
 
-}
-.hero-section .right-sec .contact span .email-icon{
-
-    position: absolute;
-    margin-top: 10px;
-    margin-left: 5px;
-    width: 22px;
-}
-.hero-section .right-sec .contact .btn{
-
+/* global css */
+.btn {
     border: none;
-    padding: 7px 15px;
+    font-weight: 600;
+    padding: 10px 40px;
+    color: #FFFFFF;
     cursor: pointer;
-    font-size: 14px;
-    font-family: poppins;
-    color: #ffffff;
-    background-color: #8BB7A2
-}
-.connecting-wraper{
-    position: absolute;
-    left: 0;
-    right: 0;
-}
-.connecting-wraper .connect-people{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    margin-top: 190px;
-    margin-bottom: 100px;
-    max-width: 100%;
-}
-.connecting-wraper .connect-people h2{
-    text-align: center;
-    padding-bottom: 40px;
-    font-size: 3rem;
-    font-family: poppins;
-}
-.connecting-wraper .connect-people .connect-left{
-    display: flex;
-    justify-content: space-between;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-top: 60px;
-}
-.connecting-wraper .connect-people .connect-left h4{
-    font-size: 2rem;
-    font-family: poppins;
-    padding-bottom: 10px;
-}
-.connecting-wraper .connect-people .connect-left p{
-    font-size: 16px;
-    font-family: poppins;
-    color: #000000b0;
-    margin-left: -20px;
-    padding-bottom: 80px;
-}
-.connecting-wraper .connect-right .connect-img{
-    margin-left: 100px;
-    width: 70rem;
-    height: 550px;
-    overflow: hidden;
-}
-.connecting-wraper .connect-right .connect-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.easy-wrapper{
-    margin-top: 90%;
-    left: 0;
-    right: 0;
-    padding-top: 100px;
-    padding-bottom: 10%;
-}
-.easy-wrapper .easy-header h1{
-        text-align: center;
-        font-family: poppins;
-        font-size: 2.6rem;
-        padding-bottom: 50px;
-}
-.easy-wrapper .web-design{
-    max-width: 70rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 70px;
-    margin: 40px auto 0 auto;
-}
-.easy-wrapper .web-design .easy-left h4{
-    color: #000000;
-    font-size: 2rem;
-    padding-bottom: 20px;
-    font-family: poppins;
-}
-.easy-wrapper .web-design .easy-left p{
-    color: #0000009f;
-    font-size: .8rem;
-    padding-top: 5px;
-    padding-bottom: 20px;
-    font-family: poppins;
-}
-.easy-left button{
-    margin-top: 40px;
-    width: 10rem;
-    height: 3.5rem;
-}
-.easy-left .easy-btn{
-    font-size: 20px;
-    border: none;
-    color: #ffffff;
-    cursor: pointer;
-    font-family: poppins;
-    background-color: #8BB7A2
-}
-.easy-right .easy-img{
-    width: 35rem;
-    height: 420px;
-    margin-left: 60px;
-    overflow: hidden;
-}
-.easy-right .easy-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.marketing-wrapper{
-    margin-top: 5%;
-    left: 0;
-    right: 0;
-}
-.marketing-container{
-    max-width: 70rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 70px;
-    margin: 40px auto 0 auto;
 }
 
-.marketing-container .left-img .market-img{
-    width: 30rem;
-    height: 650px;
-    overflow: hidden;
-}
-.marketing-container .left-img .market-img img{
-    width: 100% ;
-    height: 100%;
-    object-fit: cover;
-}
-.right-market h4{
-    color: #000000;
-    font-size: 2.2rem;
-    margin-left: -20%;
-    padding-bottom: 20px;
-    font-family: poppins;
-}
-.right-market p{
-    color: #0000009f;
-    font-size: .8rem;
-    padding-top: 5px;
-    margin-left: -20%;
-    padding-bottom: 40px;
-    font-family: poppins;
-}
-.right-market button{
-    margin-top: 40px;
-    width: 10rem;
-    height: 3.5rem;
-}
-.right-market .market-btn{
-    font-size: 20px;
-    border: none;
-    color: #ffffff;
-    cursor: pointer;
-    font-family: poppins;
-    margin-left: -20%;
-    background-color: #8BB7A2
-}
-.marketing-wrapper-2{
-    margin-top: 7%;
-    left: 0;
-    right: 0;
-    position: absolute;
-    padding-bottom: 80px;
-}
-.marketing-wrapper-2 .marketing-container-2{
-    max-width: 70rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 70px;
-    margin: 40px auto 0 auto;
-}
-.marketing-container-2 .left-market{
-    margin-left: 5%;
-    margin-right: 1%;
-    gap: 80px;
-}
-.marketing-container-2 .right-img .market-img{
-    width: 27rem;
-    height: 450px;
-    overflow: hidden;
-}
-.marketing-container-2 .right-img .market-img img{
-    width: 27rem;
-    height: 450px;
-    object-fit: cover;
-}
-.marketing-container-2 .left-market{
-
-    width: 50rem;
-    height: 650px;
-
-}
-.marketing-container-2 .left-market h4{
-    color: #000000;
-    font-size: 2.2rem;
-    margin-left: -40px;
-    padding-bottom: 20px;
-    margin-top: 25%;
-    font-family: poppins;
-}
-.marketing-container-2 .left-market p{
-    font-size: .8rem;
-    margin-left: -40px;
-    padding-bottom: 40px;
-    font-family: poppins;
-    color: #0000009f;
-}
-.left-market button{
-    margin-top: 20px;
-    width: 10rem;
-    height: 3.5rem;
-    margin-left: -40px;
-}
-.left-market .market-btn{
-    font-size: 20px;
-    border: none;
-    color: #ffffff;
-    cursor: pointer;
-    font-family: poppins;
-    background-color: #8BB7A2
-}
-.last-wrapper{
-
-    margin-top: 65%;
-    padding-bottom: 100px;
-}
-.last-wrapper .last-section .last-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 80rem ;
-    gap: 25rem;
-    margin-left: 20px;
-    padding-bottom: 40px;
-}
-.last-wrapper .last-section .last-header h1{
-    color: #000000;
-    font-size: 2.2rem;
-    font-family: poppins;
-}
-.last-wrapper .last-section .last-header p{
-    font-size: .9rem;
-    font-family: poppins;
-    color: #0000009f;
-    line-height: 30px;
-}
-.teams{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 60px;
-    padding-top: 40px;
-    max-width: 100%;
-
-}
-.teams .card .card-image{
-    width: 20rem;
-    height: 500px;
-    overflow: hidden;
-    padding-bottom: 20px;
-
-}
-.teams .card .card-image img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.teams .card h4{
-    padding-bottom: 10px;
-    font-family: poppins;
-    font-size: 1.3rem;
-}
-.teams .card p{
-    padding-bottom: 10px;
-    font-family: poppins;
-    font-size: .9rem;
-    color: #0000009f;
-}
-.last-wrapper button{
-    align-items: center;
-    justify-content: center;
-    margin-left: 50%;
-    margin-top: 50px;
-    width: 10rem;
-    height: 3.5rem;
-}
-
-.last-wrapper .see-more{
-    font-size: 20px;
-    border: none;
-    color: #ffffff;
-    cursor: pointer;
-    font-family: poppins;
+.btn-fill {
     background-color: #8BB7A2;
 }
-.footer-section{
-    position: absolute;
-    height: 80vh;
-    background-color: #10181D;
-    padding: 60px;
-    left: 0;
-    right: 0;
+.btn-lg {
+    padding: 18px 38px;
+    font-size: 16px;
 }
-.footer-icons{
+.register{
+    background: transparent;
+    outline: solid 1px;
+    padding: 15px 20px;
+}
+.container {
+    max-width: 100%;
+    background-color:#636C79;
+    margin: 0 auto;
+}
+/*----------------------------- navbar section ------------------------------*/
+
+.navbar {
     display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+    height:  17vh;
     align-items: center;
-    justify-content: center;
-    gap: 35rem;
-    padding-bottom: 40px;
-    border-bottom: 1px solid #ffffff;
 }
-.footer-section .footer-icons ul{
-    display: flex;
-    gap: 40px;
+.navbar .logo-container {
+    flex: 2;
+}
+.navbar .logo-container img {
+    width: 150px;
+}
+.navbar .list {
     list-style-type: none;
-}
-.footer-section .footer-icons ul li span{
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    background-color: #bebebe
+    gap: 40px;
+    margin-right: 70px;
+    padding-bottom: 30px;
 }
-.footer-section .footer-icons ul li span img{
-    width: 25px;
-    border-radius: 50px;
-}
-.footer{
-    display: flex;
-    position: absolute;
-    margin-top: 17%;
-    align-items: center;
-    justify-content: center;
-    left: 60px;
-    right: px;
-    max-width: 70rem;
-}
-.footer .footer-content{
-    width: 25rem;
-}
-.footer .footer-content h4{
-    font-family: poppins;
-    padding-bottom: 15px;
-    font-weight: 400;
+.navbar .list .list-item a {
+    text-decoration: none;
     color: #ffffff;
 }
-.footer .footer-content ul li{
-    list-style-type: none;
-    margin-top: 15px;
-    font-family: poppins;
-    font-size: .9rem;
-    color: #9A9DA0;
-    cursor: pointer;
+.navbar div:last-child {
+    margin-bottom: 30px;
 }
 
-/************Media queris***********/
-@media screen and (max-width:720px) {
-    body, html{
-      width: 100vw;
-      overflow-x: hidden;
-  }
 
-.navbar{
-    overflow-x: scroll !important;
-    gap: 23px;
-    margin-left: -20px;
-}
-.navbar li{
-    font-family: poppins;
-    padding: 0;
-    font-size: 12px;
-}
-.navbar .navitem-active{
-    padding: 2px;
-}
-.navbar .nav-logo{
+
+/*---------------------------- hero section ----------------------------------*/
+.hero {
     display: flex;
-    position: relative;
-    margin-right: 0;
-}
-.navbar .nav-logo .logo{
-    width: 130px;
-}
-.hero-section {
-    position: relative;
-    gap: 0px;
-    height: 80vh;
-    margin-right: 20px;
-    margin-top: -130%;
-}
-.hero-section .right-sec h1{
-    font-size: 2rem;
-    line-height: 40px;
-
-}
-.hero-section .right-sec p{
-    font-family: poppins;
-    font-size: .8rem;
-    margin-top: 35px;
-    margin-bottom: 20px;
-    color: #ffffff9f;
-}
-.connecting-wraper{
-    left: 10px;
-    right: 10px;
-    padding-bottom: 100px;
-}
-.connecting-wraper .connect-people h2{
-    padding-bottom: 40px;
-    font-size: 2rem;
-}
-.connecting-wraper .connect-people .connect-left{
-
-    margin-left: 40px;
-    margin-right: 40px;
-}
-.connecting-wraper .connect-right .connect-img{
-    margin: 10px 10px;
-    width: 42.5rem;
-    height: 350px;
-    overflow: hidden;
-}
-.easy-wrapper{
-    margin: 135% 10px 0px 10px;
-    padding-top: 1px;
-    padding-bottom: 10px;
-}
-.easy-wrapper .easy-header h1{
-    font-size: 2rem;
-
-}
-.easy-wrapper .web-design{
-    max-width: 100%;
-    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    gap: 70px;
-}
-.easy-wrapper .web-design .easy-left h4{
-    color: #000000;
-    font-size: 1.5rem;
+    height: 100vh;
+    gap: 90px;
     padding-bottom: 20px;
-    margin-left: 30px;
-    font-family: poppins;
 }
-.easy-wrapper .web-design .easy-left p{
-    color: #0000009f;
-    font-size: .8rem;
-    padding-top: 5px;
-    margin-left: 30px;
-    padding-bottom: 20px;
-    font-family: poppins;
-}
-
-.easy-left .easy-btn{
-    font-size: 20px;
-    margin-left: 30px;
-}
-.easy-right .easy-img{
+.hero-left .hero-image {
     width: 20rem;
-    height: 300px;
-    margin-left: -30px;
+    height: 500px;
+    border-radius: 10px;
     overflow: hidden;
 }
-.marketing-wrapper{
-    margin-top: 150px;
-    left: 60px;
-    right: 10px;
-}
-.marketing-container{
-    max-width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    margin: 40px 10px 0 10px;
-}
-.marketing-container .left-img .market-img{
-    width: 20rem;
-    height: 450px;
-    overflow: hidden;
-}
-.right-market h4{
-    font-size: 1.5rem;
-    margin-left: 0px;
-}
-.right-market p{
-    margin-left: 0px;
-}
-.right-market .market-btn{
-    margin-left: 0px;
-}
-
-/***********Market Wrapper-2*********/
-.marketing-wrapper-2{
-    margin-top: 150px;
-}
-.marketing-wrapper-2 .marketing-container-2{
-    max-width: 100%;
-    gap: 40px;
-    margin: 0px 30px 0px 30px;
-}
-.marketing-container-2 .left-market{
-    margin-left: 0px;
-    margin-right: 0px;
-    gap: 0px;
-}
-.marketing-container-2 .right-img .market-img{
-    margin-top: -290px;
-    width: 20rem;
-    height: 380px;
-
-}
-.marketing-container-2 .right-img .market-img img{
+.hero-left .hero-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.marketing-container-2 .left-market{
-    width: 50rem;
-    height: 650px;
+.hero .hero-right h1 {
+    font-family: "poppins";
+    line-height: 70px;
+    font-size: 60px;
+    color: #ffffff;
 }
-.marketing-container-2 .left-market h4{
-    color: #000000;
-    font-size: 1.5rem;
-    margin-left: 0px;
-    padding-bottom: 20px;
-    margin-top: 0px;
-}
-.marketing-container-2 .left-market p{
-    font-size: .8rem;
-    margin-left: 0px;
-    padding-bottom: 40px;
-}
-.left-market button{
-    margin-left: 0px;
-}
-.last-wrapper{
-    margin: 100% 30px 0px 30px;
-    padding-bottom: 100px;
-}
-.last-wrapper .last-section .last-header{
-    max-width: 100%;
-    gap: 20PX;
-}
-.last-wrapper .last-section .last-header h1{
-    font-size: 2rem;
-}
-.teams{
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-left: 0px;
-    padding-top: 0px;
-    max-width: 100%;
+.hero .hero-right p {
+    color: #bdbdbd;
+    font-size: 20px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    line-height: 25px;
 
 }
-.teams .card .card-image{
-    width: 20rem;
-    height: 350px;
-    overflow: hidden;
-    padding-bottom: 20px;
+.hero .hero-right .contact-email {
+    position: relative;
+}
+.hero .hero-right .contact-email input[type="email"] {
+    outline: none;
+    font-size: 14px;
+    width: 62%;
+    padding: 20px 160px 20px 40px;
+    border-radius: 5px;
+    border: none;
+
 
 }
-.teams .card .card-image img{
-    width: 100%;
-    height: 130%;
-    object-fit: contain;
+.hero .hero-right .contact-email input[type="email"]::placeholder {
+    padding-left: 20px;
+    font-size: 15px;
+    color: #707070;
 }
-.teams .card h4{
-    padding: 10px 0px 10px 0px;
-    font-family: poppins;
-    font-size: 1rem;
-}
-.last-wrapper button{
-    align-items: center;
-    justify-content: center;
-    margin: 50px 0px 0px 240px;
-    width: 10rem;
-    height: 3.5rem;
-}
-.footer-section{
+.hero .hero-right .contact-email span .email-icon{
     position: absolute;
-    height: 52vh;
-    background-color: #10181D;
-    padding: 0px;
+    margin-left: 5px;
+    width: 30px;
+    margin-top: 12px;
+
+}
+.hero .hero-right .contact-email button {
+    position: absolute;
+    right: 12px;
+    top: 3px;
+    height: 50px;
+}
+
+
+/*------------------------- connecting section ----------------------------*/
+.connecting-wrapper {
+    background-color: #ffffff;
+    position: absolute;
     left: 0;
     right: 0;
 }
-.footer-icons{
-    margin-top: 50px;
-    gap: 3rem;
-    padding-bottom: 10px;
-}
-.footer-section .footer-icons ul{
-    gap: 20px;
-}
-.footer-section .footer-logo{
-    margin-right: 100px;
-}
-.footer{
-    height: 30vh;
+.connecting {
+    max-width: 78rem;
+    margin: 10% auto 0 auto;
     display: flex;
-    margin-top: 25%;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    left: 300px;
-    gap: 0px;
-    width: 20rem;
 }
-.footer .footer-content{
-    margin-left: -200px;
-    max-width: 20%;
+.connecting h2 {
+    font-family: "poppins";
+    font-size: 3rem;
+    text-align: center;
+    color: #000;
+    padding-bottom: 60px;
 }
-}
-
-/************Media queris 420px***********/
-@media screen and (max-width:420px) {
-    body, html{
-      width: 100vw;
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden;
-      margin: 0;
-  }
-.hero-section {
-    flex-direction: column;
-    gap: 0px;
-    height: 100vh;
-    margin: -200% 30px 0px 40px;
-}
-
-.connecting-wraper{
-    margin-top: -30%;
-    left: 10px;
-    right: 10px;
-    padding-bottom: 100px;
-}
-.connecting-wraper .connect-people h2{
-    margin-left: 0px;
-    font-size: 1.5rem;
-}
-.connecting-wraper .connect-people .connect-left{
-    flex-wrap: wrap;
-    width: 300px;
-    gap: 40px;
-    justify-content: center;
-    margin: 0px 40px 0px 40px;
-}
-.connecting-wraper .connect-right .connect-img{
-    margin: 10px 10px;
-    width: 21.5rem;
-    height: 200px;
+.connecting .connecting-right .connecting-img {
+    max-width: 70rem;
+    max-height: 500px;
     overflow: hidden;
 }
-.easy-wrapper{
-    margin: 250% 10px 0px 10px;
-    padding-bottom: 10px;
-}
-.easy-wrapper .easy-header h1{
-    font-size: 2rem;
-    margin-left: 0px;
-
-}
-.easy-wrapper .web-design{
-    max-width: 100%;
-    flex-direction: column;
-    gap: 0px;
-}
-.easy-wrapper .web-design .easy-left h4{
-    font-size: 1.5rem;
-    margin-left: 10px;
-
-}
-.easy-wrapper .web-design .easy-left p{
-    font-size: .8rem;
-    padding: 5px 40px 0px 0px;
-    margin-left: 10px;
-}
-.easy-left button{
-    width: 7rem;
-    height: 3rem;
-}
-.easy-left .easy-btn{
-    font-size: 18px;
-    margin-left: 10px;
-}
-.easy-right .easy-img{
-    width: 15rem;
-    height: 200px;
-    margin: -100px 0px 0px 120px;
-    overflow: hidden;
-}
-.easy-right .easy-img img{
+.connecting .connecting-right .connecting-img img {
     width: 100%;
     height: 100%;
-    margin-right: 10px;
-    object-fit: contain;
+    object-fit: cover;
 }
-.marketing-wrapper{
-    margin-top: 120px;
-}
-.marketing-container{
-    max-width: 100%;
+.connecting .connecting-left {
+    display: flex;
     flex-direction: column;
-    gap: 40px;
-    margin: 40px 10px 0 10px;
-}
-.marketing-container .left-img .market-img{
-    width: 19rem;
-    height: 400px;
-    overflow: hidden;
-}
-.marketing-container .left-img .market-img img{
     width: 100%;
-    height: 100%;
-    object-fit: contain;
 }
-
-.right-market p{
-    margin-right: 40px;
-}
-.right-market .market-btn{
-    margin-top: -30px;
-}
-
-/***********Market Wrapper-2*********/
-.marketing-wrapper-2{
-    margin-top: 100px;
-}
-.marketing-wrapper-2 .marketing-container-2{
-    flex-direction: column;
-    max-width: 100%;
-    gap: 40px;
-    margin: 0px 30px 0px 60px;
-}
-.marketing-container-2 .left-market{
-    margin-left: 25rem;
-    margin-right: 0px;
-}
-.marketing-container-2 .right-img .market-img{
-    margin-top: -550px;
-    width: 15rem;
-    margin-left: 80px;
-    height: 380px;
-}
-.marketing-container-2 .right-img .market-img img{
+.connecting .connecting-left .connecting-status {
     width: 100%;
-    height: 100%;
-    object-fit: contain;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
 }
-.marketing-container-2 .left-market{
-    width: 50rem;
-    height: 650px;
+.connecting .connecting-left .connecting-status .status h4 {
+    font-size: 2.4rem;
 }
-.left-market button{
-    width: 7rem;
-    height: 3rem;
-}
-.last-wrapper{
-    margin: 150% 50px 0px 0px;
-    padding-bottom: 100px;
-}
-.last-wrapper .last-section .last-header{
-    flex-direction: column;
-    max-width: 100%;
-    gap: 20PX;
-}
-.last-wrapper .last-section .last-header h1{
-    font-size: 2rem;
-}
-.last-wrapper .last-section .last-header p{
-    font-size: .9rem;
-    line-height: 23px;
-}
-.teams{
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-left: 0px;
-    padding-top: 0px;
-    max-width: 100%;
-}
-.teams .card .card-image{
-    height: 300px;
+.connecting .connecting-left .connecting-status .status p {
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 60px;
+    font-size: 17px;
+    color: #434343e6;
 
 }
-.teams .card h4, p{
-    margin-left: 20px;
-}
-.last-wrapper button{
-    margin: 50px 0px 0px 100px;
-}
-.footer-section{
+
+
+
+/*--------------------------------- webdesign section ----------------------------*/
+
+.webdesign-wrapper {
+    background-color: #ffffff;
     position: absolute;
-    height: 60vh;
+    top: 230vh;
+    padding-top: 100px;
+    margin-top: 200px;
+    left: 0;
+    right: 0;
 }
-.footer-section .footer-logo{
-    margin-left: -140px;
+.webdesign-wrapper h2 {
+    font-family: "poppins";
+    font-size: 2.9rem;
+    color: #000;
+    padding-bottom: 20px;
+    font-weight: 900;
+    text-align: center;
 }
-
-.footer-icons{
-    display: none;
-}
-.footer-section .footer-icons ul li span{
-    display: none;
-}
-
-.footer-section .footer-logo img{
-    width: 90px;
-}
-.footer{
-    height: 30vh;
-    display: flex;
-    margin-top: 30%;
+.webdesign {
+    max-width: 78rem;
+    gap: 90px;
     align-items: center;
-    flex-direction: row;
     flex-wrap: wrap;
-    left: 10px;
-    gap: 30px;
-   max-width: 100%;
+    margin: 40px auto 0 auto;
+    display: flex;
+    justify-content: center;
+
 }
-.footer .footer-content{
-    margin-left: 20px;
-    max-width: 20%;
-}.footer .footer-content:nth-child(even) {
-    display: none;
+.webdesign .webdesign-left h4 {
+    font-size: 2.5rem;
+    color: #000;
+    padding-bottom: 30px;
+    font-family: "poppins";
 }
+.webdesign .webdesign-left p {
+    font-size: 1.2rem;
+    color: #707070;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.webdesign-right .webdesign-img {
+    width: 34rem;
+    height: 600px;
+    overflow: hidden;
+}
+.webdesign-right .webdesign-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+
+
+
+
+/*--------------------------------- markeet section ----------------------------*/
+
+.marketing-wrapper {
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 350vh;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+.marketing {
+    max-width: 78rem;
+    margin: 40px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.marketing .marketing-left {
+    order: 2;
+}
+.marketing .marketing-left h4 {
+    font-size: 2.5rem;
+    color: #000;
+    padding-bottom: 30px;
+    font-weight: 700;
+    font-family: "poppins";
+}
+.marketing .marketing-left p {
+    font-size: 1.2rem;
+    color: #707070;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+.marketing-right {
+    order: 1;
+}
+.marketing-right .marketing-img {
+    width: 34rem;
+    height: 500px;
+    overflow: hidden;
+}
+.marketing-right .marketing-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+
+/* judging */
+.judging {
+    max-width: 80rem;
+    margin: 40px auto 0 auto;
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 90px;
+}
+.judging .judging-left h4 {
+    font-size: 2.5rem;
+    color: #000;
+    padding-bottom: 30px;
+    font-weight: 700;
+    font-family: "poppins";
+}
+.judging .judging-left p {
+    font-size: 1.2rem;
+    color: #707070;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.judging-right .judging-img {
+    width: 34rem;
+    height: 500px;
+    overflow: hidden;
+}
+.judging-right .judging-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* team section */
+.team-section {
+    max-width: 80rem;
+    margin: 30px auto 30px auto;
+    padding-top: 100px;
+}
+.team-section .team-headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.team-section .team-headline h1 {
+    font-size: 2.8rem;
+    font-family: "poppins";
+    color: #000;
+}
+.team-section .team-headline p {
+    font-size: 1.2rem;
+    color: #707070;
+    line-height: 30px;
+}
+.tema-info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    flex-wrap: wrap;
+}
+.tema-info .team-card .team-image {
+    width: 350px;
+    height: 500px;
+    overflow: hidden;
+}
+.tema-info .team-card .team-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: top;
+}
+.tema-info .team-card h4 {
+    font-size: 1.2rem;
+    color: #000;
+    margin-left: 10px;
+    padding: 15px 0px;
+}
+.tema-info .team-card p {
+    color: #424242;
+    margin-left: 10px;
+}
+.team-section .team-btn {
+    text-align: center;
+    padding-top: 50px;
+}
+.team-section .team-btn button {
+    padding: 20px 60px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+}
+
+/*--------------------------- footer section --------------------*/
+
+.footer-wraper {
+    position: absolute;
+    top: 700vh;
+    left: 0;
+    right: 0;
+    background-color: #10181D;
+
+}
+.footer-wraper .footer {
+    max-width: 78rem;
+    margin: 0 auto;
+    color: #ffffff;
+}
+.footer-wraper .footer .footer-logo {
+    display: flex;
+    justify-content: space-between;
+    height: 180px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer-wraper .footer .footer-logo ul {
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.footer-wraper .footer .footer-logo ul li span {
+    background-color: rgba(255, 255, 255, 0.093);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 500px;
+}
+.footer-navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    flex-wrap: wrap;
+}
+.footer-navbar .navbar-list h4 {
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+}
+.footer-navbar .navbar-list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style-type: none;
+    color: #707070;
+    font-size: 14px;
+    font-weight: 600;
+}
+.footer-navbar .navbar-list ul li {
+    cursor: pointer;
+}
+.footer .hr {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.093);
+    width: 100%;
+    display: block;
+}
+
+
+
+
+
+/************Media quries*/
+@media only screen and (max-width: 1000px) {
+    .navbar {
+        height: 12vh;
+        overflow-x: scroll !important ;
+    }
+    .navbar>div>img{
+        margin-right: 20px;
+    }
+    .navbar .logo-container img {
+        width: 100px;
+    }
+    .navbar .list {
+        margin-right: 30px;
+        padding-bottom: 0px;
+    }
+    .navbar div:last-child {
+        margin-bottom: 0px;
+    }
+    .register{
+        width: 100px;
+        padding: 10px 5px;
+    }
+    .hero {
+        flex-wrap: wrap;
+        height: auto;
+        align-items: center;
+        margin: 0 20px 20px 20px;
+        justify-content: center;
+    }
+    .hero-left .hero-image {
+        margin-top: 30px;
+    }
+    .hero .hero-right h1 {
+        text-align: center;
+        padding: 0px 10px;
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .hero .hero-right p {
+        text-align: center;
+        padding: 0 10px;
+        line-height: 20px;
+        font-size: 14px;
+    }
+    .hero .hero-right .contact-email input[type="email"] {
+        padding: 22px 170px 22px 20px;
+        width: auto;
+    }
+    .hero .hero-right .contact-email button {
+        right: 10px;
+        top: 5px;
+    }
+    .connecting .connecting-right .connecting-img {
+        padding-bottom: 100px;
+        height: 400px;
+        margin: 4px;
+    }
+    .connecting{
+        margin-bottom: 100px;
+        margin: 4px;
+    }
+    .connecting .connecting-left .connecting-status {
+        flex-wrap: wrap;
+    }
+    .webdesign-wrapper h2 {
+        font-size: 3rem;
+    }
+    .webdesign .webdesign-left h4 {
+        font-size: 1.8rem;
+        margin-left: 20px;
+    }
+    .webdesign .webdesign-left p {
+        font-size: .9rem;
+    }
+    .webdesign-right .webdesign-img {
+        width: 24rem;
+        height: 400px;
+    }
+    .marketing .marketing-left h4 {
+        font-size: 1.8rem;
+        margin-left: 20px;
+    }
+    .marketing .marketing-left p {
+        font-size: .9rem;
+    }
+    .marketing-right .marketing-img {
+        width: 24rem;
+        height: 400px;
+    }
+
+    .marketing-wrapper {
+        top: 300vh;
+        padding-top: 0;
+    }
+    .marketing .marketing-left {
+        order: 1;
+    }
+    .judging .judging-left h4 {
+        font-size: 1.8rem;
+        margin-left: 20px;
+    }
+    .btn{
+        margin-left: 20px;
+    }
+    .judging .judging-left p {
+        font-size: .9rem;
+
+    }
+    .judging-right .judging-img {
+        width: 24rem;
+        height: 400px;
+    }
+    .team-section {
+        max-width: 78rem;
+        margin: 40px auto 40px auto;
+        padding-top: 50px;
+        height: auto;
+
+    }
+    .team-section .team-headline p {
+        font-size: .9rem;
+        margin-top: 10px;
+    }
+    .team-section .team-headline h1,p {
+        margin-left: 20px;
+    }
+    .tema-info {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .footer-wraper {
+        top: 830vh;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .footer-wraper .footer .footer-logo .logo{
+        width: 120px;
+    }
+    .footer-wraper .footer .footer-logo ul {
+        gap: 20px;
+    }
+    .footer-navbar{
+       margin: 3px;
+    }
+    .footer-navbar .navbar-list{
+        padding: 5px;
+     }
+
+@media only screen and (max-width: 821px) {
+    .footer-wraper {
+        top: 600vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .connecting h2 {
+        font-size: 2rem;
+    }
+    .webdesign-wrapper {
+        padding-top: 0px;
+        margin-top: 80px;
+
+    }
+    .webdesign-wrapper h2 {
+        font-size: 2rem;
+    }
+    .webdesign-wrapper {
+        position: absolute;
+        top: 200vh;
+        padding-top: 0px;
+    }
+    .footer-wraper {
+        top: 750vh;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+}
+@media only screen and (max-width: 400px) {
+    .connecting .connecting-right .connecting-img {
+        margin-bottom: 100px;
+        height: 10rem;
+        width: 20rem;
+    }
+    .footer-wraper {
+        top: 790vh;
+    }
+    .marketing-wrapper {
+        top: 300vh;
+        padding-top: 90;
+    }
 }

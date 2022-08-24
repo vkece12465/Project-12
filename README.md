@@ -21,6 +21,5 @@
 ## **The website same as below image**
 
 ![](./Screenshot/project-12.jpeg)
-![](./Screenshot/Mobile.png)
-![](./Screenshot/Mobile-1.png)
-![](./Screenshot/Mobile-2.png)
+![](./Screenshot/Mobile.jpeg)
+
